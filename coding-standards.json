@@ -1,0 +1,12 @@
+{
+  "entityRelations": {},
+  "external": {},
+  "entities": {
+    "directive": {
+      "type": "ANGULAR_DIRECTIVE"
+    },
+    "service": {
+      "type": "ANGULAR_SERVICE"
+    }
+  }
+}
