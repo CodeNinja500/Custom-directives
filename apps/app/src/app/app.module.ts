@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SnackBarDirectiveModule } from './directives/snack-bar.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MatSnackBarModule,
     ReactiveFormsModule,
+    SnackBarDirectiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
