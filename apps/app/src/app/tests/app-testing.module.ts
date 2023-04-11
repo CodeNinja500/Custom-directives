@@ -18,6 +18,8 @@ import { UrlValidatorDirectiveTestComponent } from './url-vaidator-directive.tes
 import { ReactiveFormsModule } from '@angular/forms';
 import { TelValidatorDirectiveTestComponent } from './tel-validator-directive.test-component';
 import { SnackBarDirectiveModule } from '../directives/snack-bar.directive-module';
+import { ConfirmDialogComponentModule } from '../components/confirm-dialog/confirm-dialog.component-module';
+import { ConfirmDialogDirectiveModule } from '../directives/confirm-dialog.directive-module';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { SnackBarDirectiveModule } from '../directives/snack-bar.directive-modul
     MatSnackBarModule,
     ReactiveFormsModule,
     SnackBarDirectiveModule,
+    ConfirmDialogComponentModule,
+    ConfirmDialogDirectiveModule,
   ],
   providers: [],
   bootstrap: [],
