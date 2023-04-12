@@ -18,7 +18,12 @@ describe('MoveDirective', () => {
       By.css(`button[data-test-id="directive-button"]`)
     );
 
-    element.triggerEventHandler('mousedown', { offsetX: 10, offsetY: 10 });
+    element.triggerEventHandler('mousedown', {
+      offsetX: 10,
+      offsetY: 10,
+      clientX: 10,
+      clientY: 10,
+    });
     fixture.detectChanges();
     document.dispatchEvent(
       new MouseEvent('mousemove', { clientX: 100, clientY: 100 })
