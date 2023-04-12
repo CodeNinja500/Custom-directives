@@ -1,1 +1,16 @@
-<button confirmDialog="Are you sure?"></button>
+<div [bgCarousel]="['rgb(0, 255, 255)', 'rgb(255, 0, 255)']">
+    <div style='border: 1px solid;width:max-content;' moveable>
+        <h2>Move me</h2>
+    </div>
+    <button mat-raised-button color="primary" confirmDialog="Are you sure?" (confirmed)="dialogTest($event)">Open mat dialog</button>
+    <br>
+    <br>
+    <div>Blocked pasting</div>
+    <textarea blockPaste></textarea>
+
+</div>
+<div>
+    <div style='border: 1px solid;width:max-content;' moveable>
+        <h2>Move me</h2>
+    </div>
+</div>

@@ -11,10 +11,21 @@
       "model": ["PROPERTY", "PARAMETER", "RETURN"]
     },
     "directive":{
-      "service" : ["CONSTRUCTOR"]
+      "service" : ["CONSTRUCTOR"],
+      "renderer2" : ["CONSTRUCTOR"],
+      "elementRef": ["CONSTRUCTOR"]
     }
   },
-  "external": {},
+  "external": {
+    "elementRef" :{
+      "type": "ElementRef",
+      "module": "@angular/core"
+    },
+    "renderer2":{
+      "type": "Renderer2",
+      "module": "@angular/core"
+    }
+  },
   "entities": {
     "component": {
       "type": "ANGULAR_COMPONENT",
