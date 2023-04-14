@@ -10,8 +10,6 @@ import {
 export class MovableDirective {
   constructor(private _renderer2: Renderer2, private _elementRef: ElementRef) {}
 
-  //THIS WORKS BUT DOESNT PASS THE TEST
-
   isMouseDown: boolean = false;
   firstClick = true;
 
@@ -61,36 +59,4 @@ export class MovableDirective {
   stop(event: MouseEvent) {
     this.isMouseDown = false;
   }
-
-  //============== DOESNT WORK BUT PASSES THE TEST ================
-  // isMouseDown: boolean = false;
-  // xOffset: number = 0;
-  // yOffset: number = 0;
-
-  // xCurrent: number = 0;
-  // yCurrent: number = 0;
-
-  // @HostListener('mousedown', ['$event'])
-  // onMouseDown(event: MouseEvent) {
-  //   this.isMouseDown = true;
-  //   this.xOffset = event.offsetX;
-  //   this.yOffset = event.offsetY;
-  // }
-  // @HostListener('document: mousemove', ['$event'])
-  // move(event: MouseEvent) {
-  //   if (this.isMouseDown) {
-  //     this.xCurrent = event.clientX - this.xOffset;
-  //     this.yCurrent = event.clientY - this.yOffset;
-
-  //     this._renderer2.setStyle(
-  //       this._elementRef.nativeElement,
-  //       'transform',
-  //       `translate3d(${this.xCurrent}px, ${this.yCurrent}px, 0)`
-  //     );
-  //   }
-  // }
-  // @HostListener('document: mouseup')
-  // stop() {
-  //   this.isMouseDown = false;
-  // }
 }
