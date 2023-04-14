@@ -16,6 +16,7 @@ import { BackgroundCarouselDirectiveModule } from './directives/background-carou
 import { MovableDirectiveModule } from './directives/movable.directive-module';
 import { DeleteProductDirectiveModule } from './directives/delete-product.directive-module';
 import { FeatureFlagsDirectiveModule } from './directives/feature-flags.directive-module';
+import { UrlValidatorDirectiveModule } from './directives/url-validator.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -36,6 +37,7 @@ import { FeatureFlagsDirectiveModule } from './directives/feature-flags.directiv
     MovableDirectiveModule,
     DeleteProductDirectiveModule,
     FeatureFlagsDirectiveModule,
+    UrlValidatorDirectiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

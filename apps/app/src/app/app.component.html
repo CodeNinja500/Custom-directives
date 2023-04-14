@@ -14,3 +14,6 @@
         <h2>Move me</h2>
     </div>
 </div>
+<input [formControl]="form" type="url" required />
+
+{{form.errors|json}}
