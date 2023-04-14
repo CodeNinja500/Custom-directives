@@ -15,6 +15,7 @@ import { BlockPasteDirectiveModule } from './directives/block-paste.directive-mo
 import { BackgroundCarouselDirectiveModule } from './directives/background-carousel.directive-module';
 import { MovableDirectiveModule } from './directives/movable.directive-module';
 import { DeleteProductDirectiveModule } from './directives/delete-product.directive-module';
+import { FeatureFlagsDirectiveModule } from './directives/feature-flags.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -34,6 +35,7 @@ import { DeleteProductDirectiveModule } from './directives/delete-product.direct
     BackgroundCarouselDirectiveModule,
     MovableDirectiveModule,
     DeleteProductDirectiveModule,
+    FeatureFlagsDirectiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
