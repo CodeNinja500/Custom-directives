@@ -17,6 +17,7 @@ import { MovableDirectiveModule } from './directives/movable.directive-module';
 import { DeleteProductDirectiveModule } from './directives/delete-product.directive-module';
 import { FeatureFlagsDirectiveModule } from './directives/feature-flags.directive-module';
 import { UrlValidatorDirectiveModule } from './directives/url-validator.directive-module';
+import { TelPatternDirectiveModule } from './directives/tel-pattern.directive-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -38,6 +39,7 @@ import { UrlValidatorDirectiveModule } from './directives/url-validator.directiv
     DeleteProductDirectiveModule,
     FeatureFlagsDirectiveModule,
     UrlValidatorDirectiveModule,
+    TelPatternDirectiveModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

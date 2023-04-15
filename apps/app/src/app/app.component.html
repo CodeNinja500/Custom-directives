@@ -14,6 +14,9 @@
         <h2>Move me</h2>
     </div>
 </div>
-<input [formControl]="form" type="url" required />
-
-{{form.errors|json}}
+<br>
+Enter webiste url
+<input [formControl]="form" type="url" required />{{form.errors|json}}
+<br>
+Enter you phone number
+<input [formControl]="telForm" type='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />{{telForm.errors|json}}

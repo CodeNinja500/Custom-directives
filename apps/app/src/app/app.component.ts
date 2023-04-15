@@ -12,4 +12,5 @@ export class AppComponent {
   }
 
   public readonly form: FormControl = new FormControl('');
+  public readonly telForm: FormControl = new FormControl('');
 }
